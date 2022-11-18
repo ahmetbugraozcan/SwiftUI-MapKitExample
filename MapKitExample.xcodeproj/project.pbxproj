@@ -14,6 +14,10 @@
 		128CFF3B2928165300C7B52D /* MapKitExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128CFF3A2928165300C7B52D /* MapKitExampleTests.swift */; };
 		128CFF452928165300C7B52D /* MapKitExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128CFF442928165300C7B52D /* MapKitExampleUITests.swift */; };
 		128CFF472928165300C7B52D /* MapKitExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128CFF462928165300C7B52D /* MapKitExampleUITestsLaunchTests.swift */; };
+		128CFF552928166C00C7B52D /* LocalSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128CFF542928166C00C7B52D /* LocalSearchService.swift */; };
+		128CFF5829281AAB00C7B52D /* LocalSearchViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128CFF5729281AAB00C7B52D /* LocalSearchViewData.swift */; };
+		128CFF5B29281B6100C7B52D /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128CFF5A29281B6100C7B52D /* ContentViewModel.swift */; };
+		128CFF5E292824A900C7B52D /* MapKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128CFF5D292824A900C7B52D /* MapKitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		128CFF402928165300C7B52D /* MapKitExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapKitExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		128CFF442928165300C7B52D /* MapKitExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitExampleUITests.swift; sourceTree = "<group>"; };
 		128CFF462928165300C7B52D /* MapKitExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		128CFF542928166C00C7B52D /* LocalSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchService.swift; sourceTree = "<group>"; };
+		128CFF5729281AAB00C7B52D /* LocalSearchViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalSearchViewData.swift; sourceTree = "<group>"; };
+		128CFF5A29281B6100C7B52D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		128CFF5D292824A900C7B52D /* MapKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,10 @@
 		128CFF282928165200C7B52D /* MapKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				128CFF5C2928249B00C7B52D /* Views */,
+				128CFF5929281B4E00C7B52D /* ViewModels */,
+				128CFF5629281A9700C7B52D /* Models */,
+				128CFF532928165900C7B52D /* Services */,
 				128CFF292928165200C7B52D /* MapKitExampleApp.swift */,
 				128CFF2B2928165200C7B52D /* ContentView.swift */,
 				128CFF2D2928165300C7B52D /* Assets.xcassets */,
@@ -125,6 +137,38 @@
 				128CFF462928165300C7B52D /* MapKitExampleUITestsLaunchTests.swift */,
 			);
 			path = MapKitExampleUITests;
+			sourceTree = "<group>";
+		};
+		128CFF532928165900C7B52D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				128CFF542928166C00C7B52D /* LocalSearchService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		128CFF5629281A9700C7B52D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				128CFF5729281AAB00C7B52D /* LocalSearchViewData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		128CFF5929281B4E00C7B52D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				128CFF5A29281B6100C7B52D /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		128CFF5C2928249B00C7B52D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				128CFF5D292824A900C7B52D /* MapKitView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				128CFF5E292824A900C7B52D /* MapKitView.swift in Sources */,
 				128CFF2C2928165200C7B52D /* ContentView.swift in Sources */,
+				128CFF552928166C00C7B52D /* LocalSearchService.swift in Sources */,
+				128CFF5829281AAB00C7B52D /* LocalSearchViewData.swift in Sources */,
 				128CFF2A2928165200C7B52D /* MapKitExampleApp.swift in Sources */,
+				128CFF5B29281B6100C7B52D /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
